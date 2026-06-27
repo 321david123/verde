@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ===== SEO ===== -->
+  <title>Verde — Contemporary Mexican Cuisine | Bettendorf, Iowa</title>
+  <meta name="description" content="Verde is an upscale, contemporary Mexican restaurant in Bettendorf, Iowa. Handmade tortillas, an editorial dinner menu, craft cocktails, and a Día de los Muertos heritage honoring grandmother Alicia. Reservations available." />
+  <meta name="keywords" content="Verde, Mexican restaurant Bettendorf, contemporary Mexican cuisine, fine dining Quad Cities, Verde Bettendorf, upscale Mexican Iowa, craft cocktails, handmade tortillas" />
+  <meta name="author" content="Verde" />
+  <meta name="theme-color" content="#0d1411" />
+  <link rel="canonical" href="https://verdebettendorf.com/" />
+
+  <!-- ===== Open Graph ===== -->
+  <meta property="og:type" content="restaurant" />
+  <meta property="og:site_name" content="Verde — Contemporary Mexican Cuisine" />
+  <meta property="og:title" content="Verde — Contemporary Mexican Cuisine | Bettendorf, Iowa" />
+  <meta property="og:description" content="Pushing the boundaries of Mexican cuisine while rooted in authentic tradition. An upscale dinner, a humble lunch, and a Día de los Muertos heritage in Bettendorf, Iowa." />
+  <meta property="og:image" content="https://verdebettendorf.com/assets/hero.jpg" />
+  <meta property="og:image:alt" content="Verde — a moody place setting at the contemporary Mexican restaurant in Bettendorf, Iowa" />
+  <meta property="og:url" content="https://verdebettendorf.com/" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- ===== Twitter ===== -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Verde — Contemporary Mexican Cuisine" />
+  <meta name="twitter:description" content="Upscale, contemporary Mexican dining in Bettendorf, Iowa. Reservations open." />
+  <meta name="twitter:image" content="https://verdebettendorf.com/assets/hero.jpg" />
+
+  <!-- ===== Favicon ===== -->
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <link rel="apple-touch-icon" href="assets/favicon.png" />
+
+  <!-- ===== Fonts ===== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- ===== Libraries (CDN) ===== -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!-- ===== Styles ===== -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- If JS is disabled, never leave reveal/letter content hidden -->
+  <noscript><style>
+    [data-reveal]{opacity:1!important;transform:none!important}
+    .hero__img{transform:scale(1.05)!important}
+  </style></noscript>
+
+  <!-- ===== Structured Data ===== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Verde",
+    "description": "Upscale, contemporary Mexican restaurant in Bettendorf, Iowa.",
+    "image": "https://verdebettendorf.com/assets/hero.jpg",
+    "servesCuisine": "Contemporary Mexican",
+    "priceRange": "$$$",
+    "telephone": "+1-563-355-7497",
+    "email": "info@verdebettendorf.com",
+    "url": "https://verdebettendorf.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "1507 State St",
+      "addressLocality": "Bettendorf",
+      "addressRegion": "IA",
+      "postalCode": "52722",
+      "addressCountry": "US"
+    },
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday","Wednesday","Thursday"], "opens": "17:00", "closes": "21:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Friday","Saturday"], "opens": "11:00", "closes": "14:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Friday","Saturday"], "opens": "17:00", "closes": "21:00" }
+    ],
+    "sameAs": [
+      "https://www.instagram.com/verdebettendorf/",
+      "https://www.facebook.com/verdebettendorf/"
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <!-- Grain / noise overlay -->
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#top" class="nav__brand" aria-label="Verde home">
+        <img src="assets/logo.png" alt="Verde — Contemporary Mexican" class="nav__logo" width="120" height="40" />
+      </a>
+
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#story">Story</a>
+        <a href="#signatures">Signatures</a>
+        <a href="#menu">Menu</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#visit">Visit</a>
+      </nav>
+
+      <div class="nav__cta">
+        <a href="https://tableagent.com/davenport-bettendorf/verde/" target="_blank" rel="noopener" class="btn btn--gold">Reserve</a>
+      </div>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="overlay">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ============ MOBILE OVERLAY ============ -->
+  <div class="overlay" id="overlay" role="dialog" aria-modal="true" aria-label="Menu">
+    <button class="overlay__close" id="overlayClose" aria-label="Close menu">&times;</button>
+    <nav class="overlay__nav" aria-label="Mobile">
+      <a href="#story">Story</a>
+      <a href="#signatures">Signatures</a>
+      <a href="#menu">Menu</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#visit">Visit</a>
+    </nav>
+    <div class="overlay__actions">
+      <a href="https://tableagent.com/davenport-bettendorf/verde/" target="_blank" rel="noopener" class="btn btn--gold">Reserve a Table</a>
+      <a href="tel:+15633557497" class="btn btn--ghost">Call (563) 355-7497</a>
+    </div>
+    <p class="overlay__addr">1507 State St · Bettendorf, Iowa</p>
+  </div>
+
+  <main id="top">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="hero">
+      <div class="hero__media" aria-hidden="true">
+        <img src="assets/hero.jpg" alt="" class="hero__img" id="heroImg" decoding="async" />
+        <div class="hero__scrim"></div>
+      </div>
+
+      <div class="hero__content">
+        <p class="hero__eyebrow" data-reveal>Bettendorf · Iowa</p>
+        <img src="assets/logo.png" alt="Verde" class="hero__logo" data-reveal width="520" height="220" />
+        <p class="hero__tagline" data-reveal>Flavors of Mexico — pushed beyond the ordinary,<br />rooted in tradition.</p>
+        <div class="hero__cta" data-reveal>
+          <a href="https://tableagent.com/davenport-bettendorf/verde/" target="_blank" rel="noopener" class="btn btn--gold btn--lg">Reserve a Table</a>
+          <a href="#menu" class="btn btn--ghost btn--lg">View the Menu</a>
+        </div>
+      </div>
+
+      <a href="#story" class="hero__cue" aria-label="Scroll down">
+        <span class="hero__cue-line"></span>
+        <span class="hero__cue-text">Scroll</span>
+      </a>
+    </section>
+
+    <!-- ============ STORY ============ -->
+    <section class="story" id="story">
+      <div class="story__grid">
+        <div class="story__text">
+          <p class="kicker" data-reveal>Who We Are</p>
+          <h2 class="story__head" data-reveal>
+            A table set <em>alongside</em><br />the family we honor.
+          </h2>
+          <p data-reveal>
+            At Verde, we push the boundaries of Mexican cuisine while remaining deeply
+            rooted in its authentic traditions. Our owner, Sid, spent the primary years
+            of his childhood being raised by grandparents whose missionary work took them
+            across South and Central America — and a lifelong love of the region's food
+            and cultures was born there.
+          </p>
+          <p data-reveal>
+            That history lives on the plate. Our handmade tortillas honor Sid's trips to
+            the artisan Tortilla Factory with his grandmother, <em>Alicia</em>, whose
+            portrait anchors a vivid Día de los Muertos mural on our back wall. The Day of
+            the Dead theme throughout is our way of celebrating family of the past — so
+            when you dine with us, you dine alongside them.
+          </p>
+          <a href="#signatures" class="link-underline" data-reveal>Meet the signatures &rarr;</a>
+        </div>
+
+        <figure class="story__media" data-parallax-wrap>
+          <img src="assets/feature-2.jpg" alt="A Verde place setting — a green napkin rosette, polished silver, and the contemporary Mexican menu" class="story__img" data-parallax loading="lazy" decoding="async" width="720" height="960" />
+          <figcaption class="story__cap">The mural of Alicia · est. 2023</figcaption>
+        </figure>
+      </div>
+
+      <!-- Stat counters -->
+      <div class="stats" id="stats">
+        <div class="stat" data-reveal>
+          <span class="stat__num" data-count="4.8" data-decimals="1">0</span>
+          <span class="stat__label">Restaurantji rating</span>
+        </div>
+        <div class="stat" data-reveal>
+          <span class="stat__num" data-count="139" data-suffix="+">0</span>
+          <span class="stat__label">Guest reviews</span>
+        </div>
+        <div class="stat" data-reveal>
+          <span class="stat__num" data-count="100" data-suffix="%">0</span>
+          <span class="stat__label">Handmade tortillas</span>
+        </div>
+        <div class="stat" data-reveal>
+          <span class="stat__num stat__num--word">GF</span>
+          <span class="stat__label">Gluten-free &amp; soy-free</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SIGNATURES ============ -->
+    <section class="sig" id="signatures">
+      <div class="sig__intro">
+        <p class="kicker" data-reveal>The Signatures</p>
+        <h2 class="section-head" data-reveal>Dishes worth<br />the drive.</h2>
+      </div>
+
+      <!-- Row 1 -->
+      <article class="sig__row">
+        <figure class="sig__media" data-parallax-wrap>
+          <img src="assets/dish-fish.jpg" alt="Mango Salsa Pescado — red snapper with mango salsa and avocado crema" data-parallax loading="lazy" decoding="async" width="1600" height="1067" />
+        </figure>
+        <div class="sig__body">
+          <span class="sig__index">01</span>
+          <h3 class="sig__title" data-letters>Mango Salsa Pescado</h3>
+          <p class="sig__desc">Red snapper plated with bright mango salsa, avocado crema, quinoa,
+            radish and jalapeño. The dish guests call "one of the best meals in the state."</p>
+          <a href="#menu" class="link-underline">On the dinner menu &rarr;</a>
+        </div>
+      </article>
+
+      <!-- Row 2 (reversed) -->
+      <article class="sig__row sig__row--rev">
+        <figure class="sig__media" data-parallax-wrap>
+          <img src="assets/dish-steak.jpg" alt="Asada — hanger steak with Oaxaca cheese rice and chimichurri" data-parallax loading="lazy" decoding="async" width="1600" height="1067" />
+        </figure>
+        <div class="sig__body">
+          <span class="sig__index">02</span>
+          <h3 class="sig__title" data-letters>Asada</h3>
+          <p class="sig__desc">Hanger steak over Oaxaca cheese rice with fried carrots, chimichurri
+            and a finish of Hawaiian salt. Bold, precise, unmistakably Verde.</p>
+          <a href="#menu" class="link-underline">On the dinner menu &rarr;</a>
+        </div>
+      </article>
+
+      <!-- Row 3 -->
+      <article class="sig__row">
+        <figure class="sig__media" data-parallax-wrap>
+          <img src="assets/dish-tacos.jpg" alt="Specialty tacos on handmade tortillas" data-parallax loading="lazy" decoding="async" width="1600" height="1933" />
+        </figure>
+        <div class="sig__body">
+          <span class="sig__index">03</span>
+          <h3 class="sig__title" data-letters>Specialty Tacos</h3>
+          <p class="sig__desc">Asada, birria, carnitas and pescado — each on a handmade tortilla
+            pressed in tribute to Sid's grandmother Alicia. A humble craft, elevated.</p>
+          <a href="#menu" class="link-underline">On the lunch menu &rarr;</a>
+        </div>
+      </article>
+
+      <!-- Row 4 (reversed) -->
+      <article class="sig__row sig__row--rev">
+        <figure class="sig__media" data-parallax-wrap>
+          <img src="assets/drink-margarita.jpg" alt="Spicy Mezcal Margarita with chamoy and Tajín" data-parallax loading="lazy" decoding="async" width="1600" height="1020" />
+        </figure>
+        <div class="sig__body">
+          <span class="sig__index">04</span>
+          <h3 class="sig__title" data-letters>Spicy Mezcal Margarita</h3>
+          <p class="sig__desc">Mezcal, lime, lemon, chamoy and Tajín — the signature pour from a
+            full bar of craft cocktails. A zero-proof version is always available.</p>
+          <a href="#bar" class="link-underline">See the bar &rarr;</a>
+        </div>
+      </article>
+    </section>
+
+    <!-- ============ MENU ============ -->
+    <section class="menu" id="menu">
+      <div class="menu__head">
+        <p class="kicker" data-reveal>Real Prices · No Guesswork</p>
+        <h2 class="section-head section-head--light" data-reveal>The Menu</h2>
+        <p class="menu__note" data-reveal>A humble lunch and an elegant dinner — every kitchen plate is
+          gluten-free &amp; soy-free. Desserts are offered verbally by your server.</p>
+
+        <div class="menu__tabs" role="tablist" aria-label="Menu sections">
+          <button class="menu__tab is-active" role="tab" aria-selected="true" data-tab="dinner">Dinner</button>
+          <button class="menu__tab" role="tab" aria-selected="false" data-tab="lunch">Lunch</button>
+          <button class="menu__tab" role="tab" aria-selected="false" data-tab="bar" id="bar">Bar</button>
+        </div>
+      </div>
+
+      <!-- DINNER -->
+      <div class="menu__panel is-active" data-panel="dinner">
+        <div class="menu__cols">
+          <div class="menu__group">
+            <h3 class="menu__group-title">Small Plates</h3>
+
+            <div class="m-item">
+              <div class="m-item__head"><span class="m-item__name">"Rice and Beans" <em class="m-tag">vg</em></span><span class="m-leader"></span><span class="m-item__price">13</span></div>
+              <p class="m-item__desc">Pinto beans, charred onion rice, rice chicharrón, queso fresco</p>
+            </div>
+            <div class="m-item">
+              <div class="m-item__head"><span class="m-item__name">Cauliflower <em class="m-tag">v</em></span><span class="m-leader"></span><span class="m-item__price">13</span></div>
+              <p class="m-item__desc">"Mole blanco", cilantro, togarashi, queso fresco, lime juice</p>
+            </div>
+            <div class="m-item">
+              <div class="m-item__head"><span class="m-item__name">Chilaquiles</span><span class="m-leader"></span><span class="m-item__price">10</span></div>
+              <p class="m-item__desc">Chips, salsa verde, pickled onions, cilantro, sour cream · add Carnita 5 / Asada 6</p>
+            </div>
+            <div class="m-item">
+              <div class="m-item__head"><span class="m-item__name">Esquites <em class="m-tag">v</em></span><span class="m-leader"></span><span class="m-item__price">13</span></div>
+              <p class="m-item__desc">Grilled corn, crema de elote, queso fresco, cilantro, spice blend, lime juice</p>
+            </div>
+          </div>
+
+          <div class="menu__group">
+            <h3 class="menu__group-title">Entrées</h3>
+
+            <div class="m-item">
+              <div class="m-item__head"><span class="m-item__name">Charro Puerco</span><span class="m-leader"></span><span class="m-item__price">26</span></div>
+              <p class="m-item__desc">Pork belly, bacon sausage bean mix, pickled onion, tepache glaze, daily veg</p>
+            </div>
+            <div class="m-item">
+              <div class="m-item__head"><span class="m-item__name">Pollo al Carbon</span><span class="m-leader"></span><span class="m-item__price">28</span></div>
+              <p class="m-item__desc">Marinated grilled chicken hind quarters, cilantro lime rice, Mexican piri piri</p>
+            </div>
+            <div class="m-item">
+              <div class="m-item__head"><span class="m-item__name">Mango Salsa Pescado</span><span class="m-leader"></span><span class="m-item__price">30</span></div>
+              <p class="m-item__desc">Red snapper, mango salsa, avocado crema, quinoa, radish, jalapeño</p>
+            </div>
+            <div class="m-item">
+              <div class="m-item__head"><span class="m-item__name">Asada</span><span class="m-leader"></span><span class="m-item__price">38</span></div>
+              <p class="m-item__desc">Hanger steak, Oaxaca cheese rice, fried carrots, chimichurri, Hawaiian salt</p>
+            </div>
+            <div class="m-item">
+              <div class="m-item__head"><span class="m-item__name">Verde Strip</span><span class="m-leader"></span><span class="m-item__price">42</span></div>
+              <p class="m-item__desc">12 oz New York strip, asparagus, grilled elote corn, spinach parmesan sauce</p>
+            </div>
+          </div>
+        </div>
+        <p class="menu__legend"><em class="m-tag">v</em> vegetarian &nbsp;·&nbsp; <em class="m-tag">vg</em> vegan option &nbsp;·&nbsp; Desserts offered verbally</p>
+      </div>
+
+      <!-- LUNCH -->
+      <div class="menu__panel" data-panel="lunch">
+        <div class="menu__cols">
+          <div class="menu__group">
+            <h3 class="menu__group-title">Tacos</h3>
+            <div class="m-item">
+              <div class="m-item__head"><span class="m-item__name">Asada <span class="m-qty">(3)</span></span><span class="m-leader"></span><span class="m-item__price">12</span></div>
+              <p class="m-item__desc">Steak, salsa roja, white onion, cilantro</p>
+            </div>
+            <div class="m-item">
+              <div class="m-item__head"><span class="m-item__name">Birria <span class="m-qty">(3)</span></span><span class="m-leader"></span><span class="m-item__price">10</span></div>
+              <p class="m-item__desc">Braised beef, onion habanero escabeche, Oaxaca cheese, consomé</p>
+            </div>
+            <div class="m-item">
+              <div class="m-item__head"><span class="m-item__name">Carnitas <span class="m-qty">(3)</span></span><span class="m-leader"></span><span class="m-item__price">8</span></div>
+              <p class="m-item__desc">Salsa verde, white onion, cilantro, orange zest</p>
+            </div>
+            <div class="m-item">
+              <div class="m-item__head"><span class="m-item__name">Pescado <span class="m-qty">(3)</span></span><span class="m-leader"></span><span class="m-item__price">10</span></div>
+              <p class="m-item__desc">Seared white fish, mango pico, chipotle lime mayo</p>
+            </div>
+          </div>
+
+          <div class="menu__group">
+            <h3 class="menu__group-title">Sides &amp; Snacks</h3>
+            <div class="m-item">
+              <div class="m-item__head"><span class="m-item__name">Rice &amp; Beans</span><span class="m-leader"></span><span class="m-item__price">4 / 7</span></div>
+              <p class="m-item__desc">Rice 4 · Beans 4 · Rice &amp; Beans 7</p>
+            </div>
+            <div class="m-item">
+              <div class="m-item__head"><span class="m-item__name">Chips &amp; Salsa</span><span class="m-leader"></span><span class="m-item__price">4 / 9</span></div>
+              <p class="m-item__desc">Salsa 4 · Guac 6 · Salsa &amp; Guac 9</p>
+            </div>
+            <div class="m-item">
+              <div class="m-item__head"><span class="m-item__name">Seltzers &amp; Modelo</span><span class="m-leader"></span><span class="m-item__price">3</span></div>
+              <p class="m-item__desc">Ice-cold, all day during lunch service</p>
+            </div>
+            <p class="menu__hours-note">Lunch served Friday &amp; Saturday, 11AM&ndash;2PM</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- BAR -->
+      <div class="menu__panel" data-panel="bar">
+        <div class="menu__cols">
+          <div class="menu__group">
+            <h3 class="menu__group-title">Cocktails</h3>
+            <div class="m-item m-item--bar"><div class="m-item__head"><span class="m-item__name">Verde Margarita</span><span class="m-leader"></span><span class="m-item__price">10</span></div><p class="m-item__desc">Silver tequila, lime, lemon, elderflower, salt</p></div>
+            <div class="m-item m-item--bar"><div class="m-item__head"><span class="m-item__name">Spicy Mezcal Margarita</span><span class="m-leader"></span><span class="m-item__price">11</span></div><p class="m-item__desc">Mezcal, lime, lemon, chamoy, Tajín</p></div>
+            <div class="m-item m-item--bar"><div class="m-item__head"><span class="m-item__name">Mango Tango Marg</span><span class="m-leader"></span><span class="m-item__price">11</span></div><p class="m-item__desc">Tequila, mango purée, lime, orange liqueur, Tajín</p></div>
+            <div class="m-item m-item--bar"><div class="m-item__head"><span class="m-item__name">La Chata Rita</span><span class="m-leader"></span><span class="m-item__price">11</span></div><p class="m-item__desc">Mezcal, horchata, maple syrup, cinnamon sugar</p></div>
+            <div class="m-item m-item--bar"><div class="m-item__head"><span class="m-item__name">El Matador</span><span class="m-leader"></span><span class="m-item__price">10</span></div><p class="m-item__desc">Tequila, pineapple juice, lime, Tajín</p></div>
+            <div class="m-item m-item--bar"><div class="m-item__head"><span class="m-item__name">Carajillo</span><span class="m-leader"></span><span class="m-item__price">11</span></div><p class="m-item__desc">Espresso, Licor 43, orange, cinnamon</p></div>
+            <div class="m-item m-item--bar"><div class="m-item__head"><span class="m-item__name">El Viejo Mexicano</span><span class="m-leader"></span><span class="m-item__price">12</span></div><p class="m-item__desc">Tequila, lime, turbinado, lemon bitters, mint, sparkling wine</p></div>
+            <div class="m-item m-item--bar"><div class="m-item__head"><span class="m-item__name">Oaxacan Old Fashion</span><span class="m-leader"></span><span class="m-item__price">13</span></div><p class="m-item__desc">Reposado, mezcal, masa syrup, lime, orange bitters</p></div>
+            <div class="m-item m-item--bar"><div class="m-item__head"><span class="m-item__name">Paloma</span><span class="m-leader"></span><span class="m-item__price">10</span></div><p class="m-item__desc">Silver tequila, grapefruit, agave, lime, salt</p></div>
+            <div class="m-item m-item--bar"><div class="m-item__head"><span class="m-item__name">Sol Quemado</span><span class="m-leader"></span><span class="m-item__price">13</span></div><p class="m-item__desc">Tequila, Aperol, Cocchi Americano, lime, burnt orange</p></div>
+          </div>
+
+          <div class="menu__group">
+            <h3 class="menu__group-title">Wine <span class="menu__by">glass / bottle</span></h3>
+            <div class="m-item m-item--bar"><div class="m-item__head"><span class="m-item__name">Red Blend</span><span class="m-leader"></span><span class="m-item__price">9 / 34</span></div></div>
+            <div class="m-item m-item--bar"><div class="m-item__head"><span class="m-item__name">Pinot Noir</span><span class="m-leader"></span><span class="m-item__price">12 / 45</span></div></div>
+            <div class="m-item m-item--bar"><div class="m-item__head"><span class="m-item__name">Cabernet Sauvignon</span><span class="m-leader"></span><span class="m-item__price">12 / 45</span></div></div>
+            <div class="m-item m-item--bar"><div class="m-item__head"><span class="m-item__name">Malbec</span><span class="m-leader"></span><span class="m-item__price">10 / 36</span></div></div>
+            <div class="m-item m-item--bar"><div class="m-item__head"><span class="m-item__name">Moscato</span><span class="m-leader"></span><span class="m-item__price">9 / 34</span></div></div>
+            <div class="m-item m-item--bar"><div class="m-item__head"><span class="m-item__name">Chardonnay</span><span class="m-leader"></span><span class="m-item__price">12 / 45</span></div></div>
+            <div class="m-item m-item--bar"><div class="m-item__head"><span class="m-item__name">Pinot Grigio</span><span class="m-leader"></span><span class="m-item__price">9 / 34</span></div></div>
+            <div class="m-item m-item--bar"><div class="m-item__head"><span class="m-item__name">Sauvignon Blanc</span><span class="m-leader"></span><span class="m-item__price">12 / 45</span></div></div>
+            <div class="m-item m-item--bar"><div class="m-item__head"><span class="m-item__name">Merlot</span><span class="m-leader"></span><span class="m-item__price">10 / 36</span></div></div>
+
+            <h3 class="menu__group-title menu__group-title--sub">Drafts &amp; Bottles</h3>
+            <p class="m-item__desc m-item__desc--free"><strong>Drafts 16oz / 20oz</strong> — Pacifico, Modelo Negra, rotating selection.</p>
+            <p class="m-item__desc m-item__desc--free"><strong>Bottles / Cans</strong> — High Noon, Modelo Negra, Pacifico, Modelo Especial, Dos Equis, Corona Extra, Heineken 0.0.</p>
+            <p class="menu__hours-note">*Zero-proof option available on starred cocktails</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu__foot" data-reveal>
+        <a href="https://www.toasttab.com/verde-quad-cities-1507-state-st/giftcards" target="_blank" rel="noopener" class="btn btn--ghost">Gift Cards</a>
+        <a href="https://tableagent.com/davenport-bettendorf/verde/" target="_blank" rel="noopener" class="btn btn--gold">Reserve a Table</a>
+      </div>
+    </section>
+
+    <!-- ============ GALLERY ============ -->
+    <section class="gallery" id="gallery">
+      <div class="gallery__head">
+        <p class="kicker" data-reveal>Inside Verde</p>
+        <h2 class="section-head" data-reveal>An evening in pictures.</h2>
+      </div>
+
+      <div class="swiper gallery__swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide gallery__slide"><img src="assets/feature-1.jpg" alt="A composed Verde plate, photographed in studio light" loading="lazy" decoding="async" width="1200" height="960" /></div>
+          <div class="swiper-slide gallery__slide"><img src="assets/dish-plated.jpg" alt="Plated entrée at Verde" loading="lazy" decoding="async" width="1600" height="1067" /></div>
+          <div class="swiper-slide gallery__slide"><img src="assets/dish-guac.jpg" alt="Housemade guacamole" loading="lazy" decoding="async" width="1600" height="1067" /></div>
+          <div class="swiper-slide gallery__slide"><img src="assets/interior-dining.jpg" alt="The Verde dining room at dusk" loading="lazy" decoding="async" width="1920" height="1280" /></div>
+          <div class="swiper-slide gallery__slide"><img src="assets/dish-fish.jpg" alt="Pescado, plated" loading="lazy" decoding="async" width="1600" height="1067" /></div>
+          <div class="swiper-slide gallery__slide"><img src="assets/interior-ambiance.jpg" alt="Warm ambient lighting in the dining room" loading="lazy" decoding="async" width="1920" height="1280" /></div>
+          <div class="swiper-slide gallery__slide"><img src="assets/drink-margarita.jpg" alt="A margarita on the bar" loading="lazy" decoding="async" width="1600" height="1020" /></div>
+        </div>
+        <div class="gallery__nav">
+          <button class="gallery__btn gallery__btn--prev" aria-label="Previous">&larr;</button>
+          <button class="gallery__btn gallery__btn--next" aria-label="Next">&rarr;</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FEATURES ============ -->
+    <section class="feat" aria-label="Why dine with us">
+      <div class="feat__grid">
+        <div class="feat__item" data-reveal>
+          <svg viewBox="0 0 24 24" class="feat__ico" aria-hidden="true"><path d="M7 3v9a5 5 0 0 0 10 0V3M12 17v4M5 3h14"/></svg>
+          <h3>Reservations</h3>
+          <p>Book your table in seconds through TableAgent.</p>
+        </div>
+        <div class="feat__item" data-reveal>
+          <svg viewBox="0 0 24 24" class="feat__ico" aria-hidden="true"><path d="M5 12h14M5 12a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4M9 12V8m0 12v-4m6 4v-4M12 4v4"/></svg>
+          <h3>Full Craft Bar</h3>
+          <p>Mezcal, agave and zero-proof — a bar built for the menu.</p>
+        </div>
+        <div class="feat__item" data-reveal>
+          <svg viewBox="0 0 24 24" class="feat__ico" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 12h8M12 8v8"/></svg>
+          <h3>Gluten-Free &amp; Soy-Free</h3>
+          <p>An entire kitchen built around it — not an afterthought.</p>
+        </div>
+        <div class="feat__item" data-reveal>
+          <svg viewBox="0 0 24 24" class="feat__ico" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h10"/><path d="M19 15l2 2-2 2"/></svg>
+          <h3>Handmade Tortillas</h3>
+          <p>Pressed daily, in tribute to grandmother Alicia.</p>
+        </div>
+        <div class="feat__item" data-reveal>
+          <svg viewBox="0 0 24 24" class="feat__ico" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 10h18"/></svg>
+          <h3>Gift Cards</h3>
+          <p>Share Verde — purchased instantly through Toast.</p>
+        </div>
+        <div class="feat__item" data-reveal>
+          <svg viewBox="0 0 24 24" class="feat__ico" aria-hidden="true"><path d="M12 21s-7-4.5-7-10a7 7 0 0 1 14 0c0 5.5-7 10-7 10z"/><circle cx="12" cy="11" r="2.5"/></svg>
+          <h3>In the Quad Cities</h3>
+          <p>1507 State St — moments off the river in Bettendorf.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ REVIEWS ============ -->
+    <section class="reviews" id="reviews">
+      <div class="reviews__head">
+        <p class="kicker" data-reveal>Word of Mouth</p>
+        <h2 class="section-head section-head--light" data-reveal>What guests say.</h2>
+      </div>
+
+      <div class="swiper reviews__swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide review">
+            <div class="review__stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <blockquote class="review__quote">"One of the best meals I've had in the state."</blockquote>
+            <cite class="review__by">C B <span>· TripAdvisor</span></cite>
+          </div>
+          <div class="swiper-slide review">
+            <div class="review__stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <blockquote class="review__quote">"Finally, we found a Mexican restaurant that takes us beyond the normal realm."</blockquote>
+            <cite class="review__by">JJRuchotzke <span>· TripAdvisor</span></cite>
+          </div>
+          <div class="swiper-slide review">
+            <div class="review__stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <blockquote class="review__quote">"The food is original, well-prepared, well presented and delicious."</blockquote>
+            <cite class="review__by">scott y <span>· TripAdvisor</span></cite>
+          </div>
+          <div class="swiper-slide review">
+            <div class="review__stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <blockquote class="review__quote">"The service was the best part — making guests feel like they were having dinner at a friend's house."</blockquote>
+            <cite class="review__by">Restaurantji review</cite>
+          </div>
+        </div>
+        <div class="swiper-pagination reviews__dots"></div>
+      </div>
+    </section>
+
+    <!-- ============ VISIT ============ -->
+    <section class="visit" id="visit">
+      <div class="visit__grid">
+        <div class="visit__info">
+          <p class="kicker" data-reveal>Visit Us</p>
+          <h2 class="section-head" data-reveal>Find your seat<br />at the table.</h2>
+
+          <div class="visit__block" data-reveal>
+            <h3>Address</h3>
+            <p><a href="https://www.google.com/maps?q=Verde+1507+State+St+Bettendorf+IA+52722" target="_blank" rel="noopener">1507 State St<br />Bettendorf, IA 52722</a></p>
+          </div>
+
+          <div class="visit__block" data-reveal>
+            <h3>Reservations &amp; Contact</h3>
+            <p>
+              <a href="tel:+15633557497">(563) 355-7497</a><br />
+              <a href="mailto:info@verdebettendorf.com">info@verdebettendorf.com</a>
+            </p>
+          </div>
+
+          <div class="visit__block" data-reveal>
+            <h3>Hours</h3>
+            <table class="hours" id="hours">
+              <tbody>
+                <tr><th scope="row">Sunday</th><td class="closed">Closed</td></tr>
+                <tr><th scope="row">Monday</th><td class="closed">Closed</td></tr>
+                <tr><th scope="row">Tue&ndash;Thu</th><td>5:00PM &ndash; 9:00PM</td></tr>
+                <tr><th scope="row">Fri&ndash;Sat</th><td>11AM&ndash;2PM &amp; 5PM&ndash;9PM</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="visit__cta" data-reveal>
+            <a href="https://tableagent.com/davenport-bettendorf/verde/" target="_blank" rel="noopener" class="btn btn--gold">Reserve a Table</a>
+            <a href="https://www.google.com/maps?q=Verde+1507+State+St+Bettendorf+IA+52722" target="_blank" rel="noopener" class="btn btn--ghost">Get Directions</a>
+          </div>
+        </div>
+
+        <div class="visit__map" data-reveal>
+          <iframe
+            title="Map to Verde, 1507 State St, Bettendorf, IA"
+            src="https://www.google.com/maps?q=Verde+1507+State+St+Bettendorf+IA+52722&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <img src="assets/logo.png" alt="Verde" class="footer__logo" width="160" height="60" loading="lazy" />
+        <p class="footer__tag">Flavors of Mexico.<br />Contemporary cuisine in Bettendorf, Iowa.</p>
+      </div>
+
+      <div class="footer__col">
+        <h4>Explore</h4>
+        <a href="#story">Our Story</a>
+        <a href="#menu">Menu</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#visit">Visit</a>
+      </div>
+
+      <div class="footer__col">
+        <h4>Visit</h4>
+        <p>1507 State St<br />Bettendorf, IA 52722</p>
+        <a href="tel:+15633557497">(563) 355-7497</a>
+        <a href="mailto:info@verdebettendorf.com">info@verdebettendorf.com</a>
+      </div>
+
+      <div class="footer__col">
+        <h4>Connect</h4>
+        <a href="https://www.instagram.com/verdebettendorf/" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.facebook.com/verdebettendorf/" target="_blank" rel="noopener">Facebook</a>
+        <a href="https://tableagent.com/davenport-bettendorf/verde/" target="_blank" rel="noopener">Reservations</a>
+        <a href="https://www.toasttab.com/verde-quad-cities-1507-state-st/giftcards" target="_blank" rel="noopener">Gift Cards</a>
+      </div>
+    </div>
+
+    <div class="footer__bar">
+      <p>&copy; 2023 Verde. All Rights Reserved.</p>
+      <p class="footer__credit">Website crafted by <strong>Sonríe México</strong></p>
+    </div>
+  </footer>
+
+  <!-- ============ MOBILE ACTION BAR ============ -->
+  <nav class="mbar" aria-label="Quick actions">
+    <a href="tel:+15633557497" class="mbar__btn"><span>Call</span></a>
+    <a href="https://www.toasttab.com/verde-quad-cities-1507-state-st/giftcards" target="_blank" rel="noopener" class="mbar__btn"><span>Gift</span></a>
+    <a href="https://tableagent.com/davenport-bettendorf/verde/" target="_blank" rel="noopener" class="mbar__btn mbar__btn--primary"><span>Reserve</span></a>
+  </nav>
+
+  <!-- ============ Scripts ============ -->
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
